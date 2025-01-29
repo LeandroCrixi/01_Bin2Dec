@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to Decimal Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title fade-in">Bin2Dec</h1>
+        <h3 class="tier fade-in-delay">Tier: 1-Beginner</h3>
+
+        <!-- Improved Explanation with Animation -->
+        <p class="description fade-in">
+            Did you know that computers only understand 0s and 1s? The binary system (base-2) is the foundation of all modern computing. 
+            Every number, letter, and symbol on your screen is just a combination of 0s and 1s behind the scenes!
+        </p>
+
+        <p class="description fade-in-delay">
+            Bin2Dec is a simple tool that helps you convert binary numbers into decimal format instantly.
+            Just enter a sequence of 0s and 1s (up to 8 digits), and watch the magic happen! <br> 🎩✨
+        </p>
+
+        <!-- Converter Box -->
+        <div class="converter fade-in">
+            <label for="binary">Binary Input</label>
+            <input type="text" id="binary" class="input-field" placeholder="Enter 0s and 1s...">
+
+            <label for="decimal">Decimal Output</label>
+            <input type="text" id="decimal" class="input-field" placeholder="Decimal result..." readonly>
+
+            <button onclick="getValue()" class="convert-btn">Convert</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer fade-in-delay">
+        <p>Leandro Crisci &copy; <span id="current-year"></span> Bin2Dec Converter</p>
+    </footer>
+
+    <!-- Script to update the year dynamically -->
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

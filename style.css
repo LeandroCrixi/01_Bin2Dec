@@ -1,0 +1,137 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Mode Background */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a52);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Wrapper (Main Card) */
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Title */
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #f4f4f9;
+    margin-bottom: 10px;
+}
+
+/* Tier Label */
+.tier {
+    font-size: 1.2rem;
+    color: #ffcc29;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #d3d3e8;
+    text-align: left;
+}
+
+/* Converter Box */
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Fields - Glassmorphism */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input Field Hover & Focus Effects */
+.input-field:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Disable Decimal Input */
+#decimal {
+    background: rgba(255, 255, 255, 0.15);
+    cursor: not-allowed;
+}
+
+/* Convert Button */
+.convert-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ffcc29, #ff5733);
+    color: #1e1e2f;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.convert-btn:hover {
+    background: linear-gradient(45deg, #ff5733, #ffcc29);
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    color: #d3d3e8;
+    font-size: 0.9rem;
+}
+
+/* ✨ Text Animation (Fade-in Effect) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add fade-in effect to different elements */
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.fade-in-delay {
+    animation: fadeIn 1s ease-out;
+}
