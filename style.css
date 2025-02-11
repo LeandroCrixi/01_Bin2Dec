@@ -115,6 +115,10 @@ body {
     font-size: 0.9rem;
 }
 
+.footer a{
+    color: #ffffff;
+}
+
 /* ✨ Text Animation (Fade-in Effect) */
 @keyframes fadeIn {
     from {
